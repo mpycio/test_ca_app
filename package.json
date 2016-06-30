@@ -1,0 +1,22 @@
+{
+  "name": "test-ca-app",
+  "version": "0.0.1",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/phonegap/phonegap-app-hello-world.git"
+  },
+  "author": "Marcin Pycio",
+  "license": "Apache-2.0.0",
+  "keywords": [
+    "ecosystem:phonegap",
+    "ecosystem:cordova",
+    "cordova:template",
+    "phonegap:template"
+  ],
+  "dependencies": {
+    "angular-carousell": "github:mpycio/test_ca"
+  },
+  "scripts": {
+    "postinstall": "cd ./node_modules/angular-carousell && npm update && gulp && ln -s ./node_modules/angular-carousell/dist ./www"
+  }
+}
