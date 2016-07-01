@@ -17,6 +17,6 @@
     "angular-carousell": "github:mpycio/test_ca"
   },
   "scripts": {
-    "postinstall": "cd ./node_modules/angular-carousell && npm update && gulp && ln -s ./node_modules/angular-carousell/dist ./www"
+    "postinstall": "cd ./node_modules/angular-carousell && npm update && gulp && cd ../../ && ln -s ./node_modules/angular-carousell/dist ./www"
   }
 }
